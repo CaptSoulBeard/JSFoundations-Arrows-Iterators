@@ -62,7 +62,9 @@ console.log(hottestDays([1, 2, 3, 4, 5, 6, 7, 8, 13, 156, 1765], 5)); // should 
  * hint: you can combine
  *       all previous functions
  *******************************************/
-const logHottestDays = function (temperatures, threshhold) {};
+const logHottestDays = function (temperatures, threshhold) {
+  logger(toCelsius(hottestDays(temperatures, threshhold)));
+};
 
 logHottestDays([140, 68, 212, 45, 149, 122, 19], 80); // should log "60", "100", "65", and "50"
 
